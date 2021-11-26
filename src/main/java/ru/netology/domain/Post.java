@@ -26,6 +26,7 @@ public class Post {
     private Geo geo;
     //private PostViewsInfo postViewsInfo;
 
+
     public int getId() {
         return id;
     }
@@ -42,28 +43,28 @@ public class Post {
         this.ownerId = ownerId;
     }
 
-    public String getOwnerLogoUrl() {
-        return ownerLogoUrl;
+    public int getFromId() {
+        return fromId;
     }
 
-    public void setOwnerLogoUrl(String ownerLogoUrl) {
-        this.ownerLogoUrl = ownerLogoUrl;
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
     }
 
-    public String getPostTitle() {
-        return postTitle;
+    public int getCreatedBy() {
+        return createdBy;
     }
 
-    public void setPostTitle(String postTitle) {
-        this.postTitle = postTitle;
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
     }
 
-    public boolean isPostIsPinned() {
-        return postIsPinned;
+    public int getDate() {
+        return date;
     }
 
-    public void setPostIsPinned(boolean postIsPinned) {
-        this.postIsPinned = postIsPinned;
+    public void setDate(int date) {
+        this.date = date;
     }
 
     public String getPostText() {
@@ -74,11 +75,91 @@ public class Post {
         this.postText = postText;
     }
 
-    public String getPostBanner() {
-        return postBanner;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public void setPostBanner(String postBanner) {
-        this.postBanner = postBanner;
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
+    }
+
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public int getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
     }
 }
