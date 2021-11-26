@@ -1,22 +1,40 @@
 package ru.netology.domain;
 
 public class LikesInfo {
-    private String likesIcon;
-    private int likesCounter;
+    private int count;
+    private int userLikes;
+    private int canLike;
+    private int canPublish;
 
-    public String getLikesIcon() {
-        return likesIcon;
+    public int getCount() {
+        return count;
     }
 
-    public void setLikesIcon(String likesIcon) {
-        this.likesIcon = likesIcon;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public int getLikesCounter() {
-        return likesCounter;
+    public int getUserLikes() {
+        return userLikes;
     }
 
-    public void setLikesCounter(int likesCounter) {
-        this.likesCounter = likesCounter;
+    public void setUserLikes(int userLikes) {
+        this.userLikes = userLikes;
+    }
+
+    public int getCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(int canLike) {
+        this.canLike = canLike;
+    }
+
+    public int getCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(int canPublish) {
+        this.canPublish = canPublish;
     }
 }

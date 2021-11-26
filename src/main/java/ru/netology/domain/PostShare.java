@@ -1,16 +1,8 @@
 package ru.netology.domain;
 
 public class PostShare {
-    private String shareIcon;
     private int shareCounter;
-
-    public String getShareIcon() {
-        return shareIcon;
-    }
-
-    public void setShareIcon(String shareIcon) {
-        this.shareIcon = shareIcon;
-    }
+    int userReposted; // поле из документации
 
     public int getShareCounter() {
         return shareCounter;
@@ -18,5 +10,13 @@ public class PostShare {
 
     public void setShareCounter(int shareCounter) {
         this.shareCounter = shareCounter;
+    }
+
+    public int getUserReposted() {
+        return userReposted;
+    }
+
+    public void setUserReposted(int userReposted) {
+        this.userReposted = userReposted;
     }
 }
